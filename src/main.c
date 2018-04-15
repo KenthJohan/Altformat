@@ -4,13 +4,6 @@
 #include "format.h"
 
 
-
-
-
-
-
-
-
 int main (int argc, char * argv [])
 {
 	char Buffer [100] = {};
@@ -21,4 +14,5 @@ int main (int argc, char * argv [])
 	//Convert (Buffer, 10, 123, 16);
 	fwrite (Buffer, sizeof (char), sizeof (Buffer), stderr);
   return 0;
+
 }
