@@ -13,6 +13,5 @@ int main (int argc, char * argv [])
 	Format_Text (sizeof (Buffer), Buffer, sizeof (Format), Format, 123, 123, 1, 0);
 	//Convert (Buffer, 10, 123, 16);
 	fwrite (Buffer, sizeof (char), sizeof (Buffer), stderr);
-  return 0;
-
+	return 0;
 }
