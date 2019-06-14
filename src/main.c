@@ -32,20 +32,14 @@ int main (int argc, char * argv [])
 	//fwrite (des, sizeof (char), sizeof (des), stderr);
 
 
-	test_i32 ("", 10);
-	test_i32 ("   ", 10);
-	test_i32 ("1234", 10);
-	test_i32 ("-123", 10);
-	test_u32 ("!#%&", 10);
-	test_i32 ("AB", 16);
-	test_i32 ("CD", 16);
-	test_i32 ("FF", 16);
+	test_i32 ("-10101", 2);
+	test_i32 ("+10101", 2);
+	test_i32 ("-90807", 2);
+	test_i32 ("+90807", 2);
+	test_i32 ("-7F", 16);
+	test_i32 ("+7F", 16);
 
-	test_u32 ("", 10);
-	test_u32 ("   ", 10);
-	test_u32 ("1234", 10);
-	test_u32 ("-123", 10);
-	test_u32 ("!#%&", 10);
+	test_i32 ("+7F", -16);
 
 	return 0;
 }
